@@ -58,6 +58,12 @@ angular.module('angularApp').directive('customSelect', function($location) {
 				}
 			}
 			if ($scope.default) $scope.setValue($scope.default);
+			else if (!$scope.placeholder) {
+				for (var i in $scope.options){
+					$scope.setValue(i);
+					break;
+				}
+			}
 		},
 		link: function($scope, el, attrs) {
 			console.log('link_select-$scope', $scope);

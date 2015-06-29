@@ -1,0 +1,57 @@
+/*   custom select layout styles  */
+custom-select .options{
+  position: relative;
+  width: 100%;
+}
+custom-select p,
+custom-select ul{
+  width: 100%;
+}
+custom-select ul{
+  position:absolute;
+  top:0;
+  left: 0;
+}
+ /*   custom select layout styles  -end*/
+
+*{
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+}
+custom-select, 
+custom-select div{
+  display: inline-block;
+}
+custom-select .options{
+  margin:0;
+  padding:0;
+  vertical-align: top;
+}
+custom-select p,
+custom-select ul{
+  background: #eee;
+  border: 1px solid #555;
+  border-radius: 3px;
+  margin:0;
+  padding: 5px;
+}
+custom-select p{
+  padding-right: 15px;
+  position: relative;
+  min-width:100px;
+}
+custom-select ul{
+  list-style: none;
+}
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #000;
+    position: absolute;
+    right: 5px;
+    top: 12px;
+}
